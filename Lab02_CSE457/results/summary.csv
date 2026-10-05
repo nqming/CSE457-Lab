@@ -1,0 +1,6 @@
+﻿experiment,accuracy_percent
+E1 no endpoint trim,90.00
+Baseline trim + MFCC13,90.00
+E2 trim + MFCC13+Delta,100.00
+DTW same word (ba),20.2040
+DTW different word (ba vs bon),27.7368
