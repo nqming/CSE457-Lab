@@ -1,0 +1,35 @@
+# DEMO ONLY — CAC CAU GIA LAP DE MINH HOA BIGRAM; KHONG PHAI CORPUS THUC TE
+# Tokens must match the five folder labels. This is a small didactic LM corpus.
+mo
+mo
+mo
+mo len
+mo xuong
+mo len
+mo dung
+dong
+dong
+dong
+dong xuong
+dong len
+dong dung
+len
+len
+len dung
+len dong
+len mo
+xuong
+xuong
+xuong dung
+xuong dong
+xuong mo
+dung
+dung
+dung
+dung mo
+dung dong
+dung len
+mo len dung
+dong xuong dung
+len dung mo
+xuong dung dong

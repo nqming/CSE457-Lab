@@ -1,0 +1,1 @@
+# WORD PHONE_1 PHONE_2 ... (điền theo phone inventory được cung cấp)
