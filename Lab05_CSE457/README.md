@@ -24,5 +24,4 @@ python tools\prepare_data.py                                  # (tuỳ chọn) t
 python Lab5.py                                                # toàn bộ thí nghiệm
 python make_report.py                                         # tạo report.docx
 ```
-Muốn dùng giọng thật: ghi đè file trong `lab5_data/clean/` (giữ nguyên tên) rồi chạy lại `Lab5.py`.
-Toàn bộ tham số nằm trong dict `CFG` đầu file `Lab5.py`.
+
