@@ -1,0 +1,10 @@
+sentence_id,sentence_text,blind_code,backend,audio_file,intelligibility_pct,mos_naturalness,mos_continuity,notes
+S1,Mời khách hàng số 23 đến quầy 5.,SYS_B,Concatenation_DP_15ms,audio_output/best_concat.wav,100.0,3.4,3.6,Rõ từng từ; chuyển nhịp giữa các từ hơi đều/ngắt nhẹ
+S1,Mời khách hàng số 23 đến quầy 5.,SYS_A,HMM_Parametric_MLPG,audio_output/hmm_tts.wav,88.9,2.4,4.0,"Liên tục mượt nhờ MLPG, nhưng chất giọng buzzy/vocoder"
+S1,Mời khách hàng số 23 đến quầy 5.,SYS_C,Neural_Piper_VITS,audio_output/neural_tts.wav,100.0,4.4,4.6,"Ngữ điệu câu liền mạch, tự nhiên nhất"
+S2,Mời khách hàng số 07 đến quầy 2.,SYS_A,Concatenation_DP_15ms,audio_output/best_concat_test2.wav,100.0,3.5,3.7,Nghe rõ nội dung số 07 quầy 2
+S2,Mời khách hàng số 07 đến quầy 2.,SYS_C,HMM_Parametric_MLPG,audio_output/hmm_test2.wav,88.9,2.5,3.9,Mượt biên nhưng vẫn còn chất tổng hợp tham số
+S2,Mời khách hàng số 07 đến quầy 2.,SYS_B,Neural_Piper_VITS,audio_output/neural_test2.wav,100.0,4.5,4.6,"Tự nhiên, ít artifact"
+S3,Mời khách hàng số 149 đến quầy 8.,SYS_C,Concatenation_DP_15ms,audio_output/best_concat_test3.wav,100.0,3.3,3.5,Chuỗi 3 chữ số 1-4-9 rời nhẹ ở biên ghép
+S3,Mời khách hàng số 149 đến quầy 8.,SYS_B,HMM_Parametric_MLPG,audio_output/hmm_test3.wav,90.0,2.4,3.9,"Biên mượt, âm sắc hơi nghẹt ở phụ âm xát"
+S3,Mời khách hàng số 149 đến quầy 8.,SYS_A,Neural_Piper_VITS,audio_output/neural_test3.wav,100.0,4.4,4.5,Nhịp điệu số 1-4-9 tự nhiên

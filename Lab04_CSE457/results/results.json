@@ -1,0 +1,605 @@
+{
+  "config": {
+    "sr": 16000,
+    "n_fft": 512,
+    "win_length": 400,
+    "hop_length": 160,
+    "target_rms": 0.085,
+    "xfade_sweep_ms": [
+      0,
+      5,
+      15,
+      30
+    ],
+    "best_xfade_ms": 15,
+    "lambda_join": 1.5,
+    "speed_list": [
+      0.8,
+      1.0,
+      1.2
+    ],
+    "pitch_list_st": [
+      -2,
+      0,
+      2
+    ],
+    "test_sentences": [
+      "Mời khách hàng số 23 đến quầy 5.",
+      "Mời khách hàng số 07 đến quầy 2.",
+      "Mời khách hàng số 149 đến quầy 8."
+    ],
+    "seed": 457
+  },
+  "part_a": {
+    "n_words": 16,
+    "n_files": 48,
+    "duration_min": 0.1435,
+    "duration_mean": 0.28999166666666665,
+    "duration_max": 0.3967,
+    "rms_min": 0.064603,
+    "rms_mean": 0.08518674999999999,
+    "rms_max": 0.10697,
+    "f0_mean": 241.8122916666667,
+    "norm_examples": {
+      "Mời khách hàng số 23 đến quầy 5.": [
+        "mời",
+        "khách",
+        "hàng",
+        "số",
+        "hai",
+        "ba",
+        "đến",
+        "quầy",
+        "năm"
+      ],
+      "Mời khách hàng số 07 đến quầy 2.": [
+        "mời",
+        "khách",
+        "hàng",
+        "số",
+        "không",
+        "bảy",
+        "đến",
+        "quầy",
+        "hai"
+      ],
+      "Mời khách hàng số 149 đến quầy 8.": [
+        "mời",
+        "khách",
+        "hàng",
+        "số",
+        "một",
+        "bốn",
+        "chín",
+        "đến",
+        "quầy",
+        "tám"
+      ]
+    }
+  },
+  "part_b": {
+    "sentence": "Mời khách hàng số 23 đến quầy 5.",
+    "tokens": [
+      "mời",
+      "khách",
+      "hàng",
+      "số",
+      "hai",
+      "ba",
+      "đến",
+      "quầy",
+      "năm"
+    ],
+    "duration_s": 2.655,
+    "mean_d_spec": 592.3701057416156,
+    "mean_sample_jump": 0.000698089599609375,
+    "boundaries": [
+      {
+        "d_spec": 299.6154394484032,
+        "d_rms_db": 6.830009555572071,
+        "sample_jump": 0.00048828125,
+        "pair": "mời -> khách",
+        "time_s": 0.355
+      },
+      {
+        "d_spec": 331.1083083613437,
+        "d_rms_db": 2.9287774376562132,
+        "sample_jump": 0.000152587890625,
+        "pair": "khách -> hàng",
+        "time_s": 0.51
+      },
+      {
+        "d_spec": 847.651390220921,
+        "d_rms_db": 6.332073836562576,
+        "sample_jump": 0.0003662109375,
+        "pair": "hàng -> số",
+        "time_s": 0.84
+      },
+      {
+        "d_spec": 181.64326552029473,
+        "d_rms_db": 1.4203747793202735,
+        "sample_jump": 0.000640869140625,
+        "pair": "số -> hai",
+        "time_s": 1.105
+      },
+      {
+        "d_spec": 888.7446448819045,
+        "d_rms_db": 12.721984629353187,
+        "sample_jump": 0.000762939453125,
+        "pair": "hai -> ba",
+        "time_s": 1.42
+      },
+      {
+        "d_spec": 1040.994279325124,
+        "d_rms_db": 4.266236486304342,
+        "sample_jump": 0.001190185546875,
+        "pair": "ba -> đến",
+        "time_s": 1.735
+      },
+      {
+        "d_spec": 174.3186433365577,
+        "d_rms_db": 11.027703394535344,
+        "sample_jump": 9.1552734375e-05,
+        "pair": "đến -> quầy",
+        "time_s": 2.04
+      },
+      {
+        "d_spec": 974.8848748383753,
+        "d_rms_db": 0.8137118604902591,
+        "sample_jump": 0.00189208984375,
+        "pair": "quầy -> năm",
+        "time_s": 2.34
+      }
+    ]
+  },
+  "part_c": {
+    "unit_selection": [
+      {
+        "sentence": "Mời khách hàng số 23 đến quầy 5.",
+        "fixed_01": {
+          "candidates": [
+            "moi_01",
+            "khach_01",
+            "hang_01",
+            "so_01",
+            "hai_01",
+            "ba_01",
+            "den_01",
+            "quay_01",
+            "nam_01"
+          ],
+          "candidate_ids": [
+            "01",
+            "01",
+            "01",
+            "01",
+            "01",
+            "01",
+            "01",
+            "01",
+            "01"
+          ],
+          "target_cost_sum": 6.378217856744867,
+          "join_cost_sum": 16.126373065478973,
+          "total_cost": 30.567777454963327,
+          "mean_d_spec": 593.9833708721854
+        },
+        "target_only": {
+          "candidates": [
+            "moi_03",
+            "khach_02",
+            "hang_03",
+            "so_01",
+            "hai_01",
+            "ba_01",
+            "den_01",
+            "quay_03",
+            "nam_01"
+          ],
+          "candidate_ids": [
+            "03",
+            "02",
+            "03",
+            "01",
+            "01",
+            "01",
+            "01",
+            "03",
+            "01"
+          ],
+          "target_cost_sum": 5.735683447769042,
+          "join_cost_sum": 14.57314442067251,
+          "total_cost": 27.595400078777807,
+          "mean_d_spec": 510.87153972819834
+        },
+        "dp_selected": {
+          "candidates": [
+            "moi_03",
+            "khach_02",
+            "hang_03",
+            "so_01",
+            "hai_01",
+            "ba_03",
+            "den_03",
+            "quay_03",
+            "nam_03"
+          ],
+          "candidate_ids": [
+            "03",
+            "02",
+            "03",
+            "01",
+            "01",
+            "03",
+            "03",
+            "03",
+            "03"
+          ],
+          "target_cost_sum": 6.4175538959463765,
+          "join_cost_sum": 10.405078941604652,
+          "total_cost": 22.025172308353355,
+          "mean_d_spec": 314.96698411333097
+        }
+      },
+      {
+        "sentence": "Mời khách hàng số 07 đến quầy 2.",
+        "fixed_01": {
+          "candidates": [
+            "moi_01",
+            "khach_01",
+            "hang_01",
+            "so_01",
+            "khong_01",
+            "bay_01",
+            "den_01",
+            "quay_01",
+            "hai_01"
+          ],
+          "candidate_ids": [
+            "01",
+            "01",
+            "01",
+            "01",
+            "01",
+            "01",
+            "01",
+            "01",
+            "01"
+          ],
+          "target_cost_sum": 7.0273847416395085,
+          "join_cost_sum": 12.059726380232998,
+          "total_cost": 25.116974311989004,
+          "mean_d_spec": 379.9460645806913
+        },
+        "target_only": {
+          "candidates": [
+            "moi_03",
+            "khach_02",
+            "hang_03",
+            "so_01",
+            "khong_01",
+            "bay_01",
+            "den_01",
+            "quay_03",
+            "hai_01"
+          ],
+          "candidate_ids": [
+            "03",
+            "02",
+            "03",
+            "01",
+            "01",
+            "01",
+            "01",
+            "03",
+            "01"
+          ],
+          "target_cost_sum": 6.384850332663683,
+          "join_cost_sum": 10.710454043264539,
+          "total_cost": 22.45053139756049,
+          "mean_d_spec": 307.07804144218153
+        },
+        "dp_selected": {
+          "candidates": [
+            "moi_03",
+            "khach_02",
+            "hang_03",
+            "so_01",
+            "khong_01",
+            "bay_03",
+            "den_03",
+            "quay_03",
+            "hai_01"
+          ],
+          "candidate_ids": [
+            "03",
+            "02",
+            "03",
+            "01",
+            "01",
+            "03",
+            "03",
+            "03",
+            "01"
+          ],
+          "target_cost_sum": 6.653160226368981,
+          "join_cost_sum": 9.459269643590591,
+          "total_cost": 20.842064691754867,
+          "mean_d_spec": 243.7198685557418
+        }
+      },
+      {
+        "sentence": "Mời khách hàng số 149 đến quầy 8.",
+        "fixed_01": {
+          "candidates": [
+            "moi_01",
+            "khach_01",
+            "hang_01",
+            "so_01",
+            "mot_01",
+            "bon_01",
+            "chin_01",
+            "den_01",
+            "quay_01",
+            "tam_01"
+          ],
+          "candidate_ids": [
+            "01",
+            "01",
+            "01",
+            "01",
+            "01",
+            "01",
+            "01",
+            "01",
+            "01",
+            "01"
+          ],
+          "target_cost_sum": 7.3615332290235465,
+          "join_cost_sum": 13.697218811519345,
+          "total_cost": 27.907361446302563,
+          "mean_d_spec": 364.7613586554364
+        },
+        "target_only": {
+          "candidates": [
+            "moi_03",
+            "khach_02",
+            "hang_03",
+            "so_01",
+            "mot_03",
+            "bon_01",
+            "chin_01",
+            "den_01",
+            "quay_03",
+            "tam_01"
+          ],
+          "candidate_ids": [
+            "03",
+            "02",
+            "03",
+            "01",
+            "03",
+            "01",
+            "01",
+            "01",
+            "03",
+            "01"
+          ],
+          "target_cost_sum": 6.595612437767307,
+          "join_cost_sum": 14.08169208567408,
+          "total_cost": 27.718150566278428,
+          "mean_d_spec": 385.8558844924233
+        },
+        "dp_selected": {
+          "candidates": [
+            "moi_03",
+            "khach_02",
+            "hang_03",
+            "so_01",
+            "mot_03",
+            "bon_03",
+            "chin_03",
+            "den_03",
+            "quay_03",
+            "tam_01"
+          ],
+          "candidate_ids": [
+            "03",
+            "02",
+            "03",
+            "01",
+            "03",
+            "03",
+            "03",
+            "03",
+            "03",
+            "01"
+          ],
+          "target_cost_sum": 7.449225348893706,
+          "join_cost_sum": 10.9011036474083,
+          "total_cost": 23.800880820006157,
+          "mean_d_spec": 256.11458711001137
+        }
+      }
+    ],
+    "xfade_sweep": [
+      {
+        "xfade_ms": 0,
+        "duration_s": 2.5263125,
+        "mean_boundary_diff": 0.004767294428884562,
+        "mean_boundary_spec_flux": 336.56280431350626
+      },
+      {
+        "xfade_ms": 5,
+        "duration_s": 2.4863125,
+        "mean_boundary_diff": 0.004111728734980592,
+        "mean_boundary_spec_flux": 314.03518727383266
+      },
+      {
+        "xfade_ms": 15,
+        "duration_s": 2.4063125,
+        "mean_boundary_diff": 0.0029701220077291445,
+        "mean_boundary_spec_flux": 270.1212058711197
+      },
+      {
+        "xfade_ms": 30,
+        "duration_s": 2.2863125,
+        "mean_boundary_diff": 0.004856039356405505,
+        "mean_boundary_spec_flux": 250.21669145082745
+      }
+    ]
+  },
+  "part_d": {
+    "hang_np_samples": 78.28571428571429,
+    "hang_f0_from_np_hz": 204.3795620437956,
+    "hang_f0_yin_hz": 208.34812906969182,
+    "speed_exp": [
+      {
+        "speed": 0.8,
+        "duration_s": 2.987375,
+        "f0_median_hz": 245.4169022430231
+      },
+      {
+        "speed": 1.0,
+        "duration_s": 2.4063125,
+        "f0_median_hz": 244.57553451537066
+      },
+      {
+        "speed": 1.2,
+        "duration_s": 1.987375,
+        "f0_median_hz": 246.44962868082246
+      }
+    ],
+    "pitch_exp": [
+      {
+        "semitone": -2,
+        "ratio": 0.8908987181403393,
+        "f0_median_hz": 216.91845223409666
+      },
+      {
+        "semitone": 0,
+        "ratio": 1.0,
+        "f0_median_hz": 244.9953915781738
+      },
+      {
+        "semitone": 2,
+        "ratio": 1.122462048309373,
+        "f0_median_hz": 275.0904111377031
+      }
+    ]
+  },
+  "part_e": {
+    "runs": [
+      {
+        "sentence": "Mời khách hàng số 23 đến quầy 5.",
+        "duration_s": 3.03,
+        "latency_s": 0.1840341999923112,
+        "n_frames": 303,
+        "f0_mean_hz": 240.1718850434908
+      },
+      {
+        "sentence": "Mời khách hàng số 07 đến quầy 2.",
+        "duration_s": 3.0,
+        "latency_s": 0.2228062000067439,
+        "n_frames": 300,
+        "f0_mean_hz": 234.4514908823352
+      },
+      {
+        "sentence": "Mời khách hàng số 149 đến quầy 8.",
+        "duration_s": 3.26,
+        "latency_s": 0.15731650000088848,
+        "n_frames": 326,
+        "f0_mean_hz": 244.4888876239588
+      }
+    ],
+    "variations": {
+      "dur0.8": {
+        "duration_s": 2.45,
+        "f0_mean_hz": 239.6373696875769
+      },
+      "dur1.2": {
+        "duration_s": 3.6,
+        "f0_mean_hz": 240.7153911590801
+      },
+      "f0_0.9": {
+        "duration_s": 3.03,
+        "f0_mean_hz": 216.15469653914172
+      },
+      "f0_1.1": {
+        "duration_s": 3.03,
+        "f0_mean_hz": 264.18907354783994
+      }
+    },
+    "model_size_kb": 77.689453125
+  },
+  "part_f": {
+    "model_name": "Piper VITS (vi_VN-vivos-x_low)",
+    "model_size_mb": 26.502049446105957,
+    "runs": [
+      {
+        "sentence": "Mời khách hàng số 23 đến quầy 5.",
+        "normalized_text": "mời khách hàng số hai ba đến quầy năm",
+        "duration_s": 2.352,
+        "latency_s": 0.05585649999557063,
+        "rtf": 0.02374851190287867,
+        "mel_shape": [
+          80,
+          236
+        ]
+      },
+      {
+        "sentence": "Mời khách hàng số 07 đến quầy 2.",
+        "normalized_text": "mời khách hàng số không bảy đến quầy hai",
+        "duration_s": 2.384,
+        "latency_s": 0.052904300013324246,
+        "rtf": 0.022191401012300438,
+        "mel_shape": [
+          80,
+          239
+        ]
+      },
+      {
+        "sentence": "Mời khách hàng số 149 đến quầy 8.",
+        "normalized_text": "mời khách hàng số một bốn chín đến quầy tám",
+        "duration_s": 2.816,
+        "latency_s": 0.06617299999925308,
+        "rtf": 0.02349893465882567,
+        "mel_shape": [
+          80,
+          282
+        ]
+      }
+    ]
+  },
+  "part_g": {
+    "comparison": [
+      {
+        "backend": "Concatenation (DP + xfade)",
+        "duration_s": 2.4063125,
+        "latency_s": 0.007511099989642389,
+        "rtf": 0.0031214150238767367,
+        "storage_mb": 0.4268074035644531,
+        "mean_spec_flux_db": 8.307545910056188,
+        "f0_median_step_hz": 2.1063741886607943
+      },
+      {
+        "backend": "HMM Parametric (MLPG)",
+        "duration_s": 3.03,
+        "latency_s": 0.1840341999923112,
+        "rtf": 0.06073735973343604,
+        "storage_mb": 0.07586860656738281,
+        "mean_spec_flux_db": 7.635489471590078,
+        "f0_median_step_hz": 3.2871031536310085
+      },
+      {
+        "backend": "Neural TTS (Piper VITS)",
+        "duration_s": 2.352,
+        "latency_s": 0.05585649999557063,
+        "rtf": 0.02374851190287867,
+        "storage_mb": 26.502049446105957,
+        "mean_spec_flux_db": 8.395395245957133,
+        "f0_median_step_hz": 2.997286072401266
+      }
+    ]
+  }
+}
