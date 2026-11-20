@@ -1,7 +1,5 @@
 # Lab 4 – Tổng hợp tiếng nói (Text-to-Speech Synthesis)
 
-Học phần **CSE457 – Xử lý âm thanh và tiếng nói** (Khoa CNTT, Trường ĐH Thủy Lợi).
-
 ## Cài đặt
 ```bash
 pip install numpy scipy matplotlib soundfile librosa piper-tts edge-tts python-docx
@@ -38,4 +36,3 @@ python Lab04.py                 # chạy toàn bộ thí nghiệm và xuất aud
 python make_report.py           # tạo report.docx
 ```
 
-Muốn thay bằng giọng thu âm thật: thay các file `.wav` trong `lab4_data/units/` (16 kHz, mono, 16-bit PCM), xóa `lab4_data/hmm_demo/hmm_model.npz` rồi chạy lại `python Lab04.py`.
